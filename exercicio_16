@@ -1,0 +1,16 @@
+somador=0
+horainicial=int(input("que horas começou a partida? "))
+while horainicial>24 or horainicial<0:
+    horainicial = int(input("que horas começou a partida? "))
+
+horafinal=int(input("que horas acabou? "))
+while horafinal>24 or horainicial<0:
+        horafinal = int(input("que horas acabou? "))
+
+duracao=horafinal-horainicial
+while duracao<0:
+    somador=duracao+24
+    print(f"a partida durou {somador} horas")
+    break
+else:
+    print(f"a partida durou {duracao} horas")
