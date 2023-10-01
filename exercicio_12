@@ -1,0 +1,13 @@
+eleitoresvalidos=int(input("quantas pessoas votaram válidos? "))
+eleitoresnulo=int(input("quantas pessoas votaram nulo? "))
+eleitoresbranco=int(input("quantas pessoas votaram em branco? "))
+totaleleitores=(eleitoresvalidos+eleitoresbranco+eleitoresnulo)
+print(f"O número total de eleitores é {totaleleitores}, {eleitoresnulo} eleitores anularam o voto, {eleitoresbranco} eleitores votaram em branco e {eleitoresvalidos} validaram seus votos")
+
+porcentagembranco=(eleitoresbranco/totaleleitores)*100
+porcentagemnulo=(eleitoresnulo/totaleleitores)*100
+porcentagemvalidos=(eleitoresvalidos/totaleleitores)*100
+
+print(f"os votos válidos {porcentagemvalidos:.1f}%")
+print(f"os votos anulados representam {porcentagemnulo:.1f}%")
+print(f"Os votos em branco representam {porcentagembranco:.1f}%")
