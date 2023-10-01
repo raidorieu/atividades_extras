@@ -1,0 +1,9 @@
+compras=0
+macas=int(input("quantas maçãs foram compradas? "))
+while macas<12:
+    compra=macas*1.30
+    print(f"deu R$ {compra:.2f}")
+    break
+else:
+    compras=macas*1
+    print(f"deu R$ {compras}")
