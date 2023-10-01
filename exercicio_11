@@ -1,0 +1,8 @@
+ano=int(input("digite sua idade: "))
+anoemdias=ano*365
+mes=int(input("em que mês estamos? "))
+mesemdias=(mes-1)*30
+dia=int(input("em que dia estamos? "))
+totaldias=anoemdias+mesemdias+dia
+
+print(f"no total você viveu {totaldias} dias!")
